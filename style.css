@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "OpenSansb";
+  src: url(./assets/fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: "OpenSanssm";
+  src: url(./assets/fonts/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "OpenSansR";
+  src: url(./assets/fonts/OpenSans-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+nav {
+  height: 52px;
+  background: #dd5555;
+  color: #ffffff;
+  font-family: OpenSansR, sans-serif;
+  display: flex;
+  padding: 13px 130px;
+}
+
+ul {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+li:hover {
+  background: #882e2e;
+  height: 20px;
+}
+
+.head-container {
+  height: 100vh;
+  background: url(./assets/img/about.jpg.png) center/cover;
+  color: #ffffff;
+  display: grid;
+}
+
+/* 
+.sup-cont {
+  border-bottom: 1px solid #ffffff;
+  width: 50%;
+  margin: 0 auto;
+} */
+
+.sup-cont h1 {
+  font-family: OpenSansb;
+  margin-top: 250px;
+  font-size: 2.8rem;
+}
+
+.sup-cont p {
+  font-family: OpenSansR;
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+  opacity: 1;
+}
+
+hr {
+  height: 1px;
+  width: 30%;
+  margin: 0 auto;
+  background: #2E2E2E;
+}
+
+.btn {
+  margin: 20px 15px;
+  border: 1px;
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-family: OpenSansR;
+  cursor: pointer;
+  font-size: 0.7rem;
+}
+
+.btn img {
+  padding: 0 8px 0 0;
+  height: 10px;
+}
+
+.btn:hover {
+  background: #dd5555;
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+
+.section-1-service {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin: 70px 0 25px;
+  font-family: OpenSanssm;
+  text-transform: uppercase;
+}
+
+.service {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.service-container img {
+  padding: 0 22px;
+  align-self: center;
+  background: #dd5555;
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  margin: 26px;
+}
+
+.service-container h3 {
+  font-family: OpenSanssm;
+  padding: 5px 0 15px;
+  font-size: 1rem;
+}
+
+.service-container p {
+  text-align: center;
+  font-size: 0.78rem;
+  font-family: OpenSansR;
+  color: #2E2E2E;
+}
+
+.section-2-team {}
