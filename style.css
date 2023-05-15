@@ -19,10 +19,17 @@
   box-sizing: border-box;
   text-align: center;
   outline: none;
+  /* max-width: 1400px; */
+  /* margin: 0 auto; */
 }
 
 li {
   list-style: none;
+}
+
+body {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 nav {
@@ -30,8 +37,11 @@ nav {
   background: #dd5555;
   color: #ffffff;
   font-family: OpenSansR, sans-serif;
-  display: flex;
-  padding: 13px 130px;
+  display: grid;
+  grid-template-columns: 18% 82%;
+  align-items: center;
+  padding: 15px;
+
 }
 
 ul {
@@ -39,28 +49,23 @@ ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 0.7rem;
+  font-size: 1rem;
   cursor: pointer;
 }
 
 li:hover {
+  transform: scale(1);
   background: #882e2e;
-  height: 20px;
+  height: 100%;
+
 }
 
 .head-container {
-  height: 100vh;
+  height: 80vh;
   background: url(./assets/img/about.jpg.png) center/cover;
   color: #ffffff;
   display: grid;
 }
-
-/* 
-.sup-cont {
-  border-bottom: 1px solid #ffffff;
-  width: 50%;
-  margin: 0 auto;
-} */
 
 .sup-cont h1 {
   font-family: OpenSansb;
@@ -70,7 +75,7 @@ li:hover {
 
 .sup-cont p {
   font-family: OpenSansR;
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   margin-bottom: 15px;
   opacity: 1;
 }
@@ -129,15 +134,21 @@ hr {
   transform: scale(1.1);
 }
 
+h2 {
+
+  font-family: OpenSanssm;
+  text-transform: uppercase;
+}
+
 .section-1-service {
   max-width: 1100px;
   margin: 0 auto;
+  color: #2E2E2E;
 }
 
-h2 {
-  margin: 70px 0 25px;
-  font-family: OpenSanssm;
-  text-transform: uppercase;
+.section-1-service h2 {
+  font-size: 2.5rem;
+  margin: 70px 0 55px;
 }
 
 .service {
@@ -146,15 +157,22 @@ h2 {
   gap: 20px;
 }
 
-.service-container img {
-  padding: 0 22px;
-  align-self: center;
-  background: #dd5555;
-  height: 60px;
-  width: 60px;
-  border-radius: 50px;
-  margin: 26px;
+.service-container {
+  width: 100%;
+  height: 100%;
 }
+
+.item {
+  background: #dd5555;
+  width: 96px;
+  height: 90px;
+  margin: 0 auto;
+  border-radius: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .service-container h3 {
   font-family: OpenSanssm;
@@ -182,19 +200,20 @@ h2 {
   color: #ffffff;
   height: 240px;
   margin: 46px 0 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .teampic-container h2 {
-  display: inline-block;
+  width: 100%;
+  font-size: 2.8rem;
 }
 
 .team-pic {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   align-items: center;
-  /* display: flex;
-  justify-content: space-around;
-  align-items: center; */
 }
 
 .team-contaier img {
@@ -215,7 +234,7 @@ h2 {
 footer {
   background: #dd5555;
   color: #ffffff;
-  height: 100vh;
+  height: 585px;
 }
 
 footer h3 {
@@ -238,7 +257,7 @@ form {
   grid-template-areas:
     "input1 input2"
     "textarea textarea";
-  gap: 30px;
+  gap: 0 30px;
 }
 
 .textarea {
@@ -249,12 +268,14 @@ label {
   font-size: 1rem;
   letter-spacing: 1px;
   font-weight: 500;
+  display: flex;
+  align-items: center;
 }
 
 input[type="text"],
 textarea {
   width: 100%;
-  margin: 20px 0 40px;
+  margin: 10px 0 30px;
   padding: 10px;
   border: 1px solid #ffffff;
   border-radius: 4px;
@@ -274,6 +295,7 @@ textarea {
   border-radius: 5px;
   margin: 0 35px;
   cursor: pointer;
+  background: #ffffff;
 }
 
 .bttn:hover {
