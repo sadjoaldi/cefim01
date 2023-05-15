@@ -25,9 +25,17 @@
                 <h1>SUPER APP</h1>
                 <p>L'application trop super!</p>
                 <hr />
-                <button class="btn"><img src="./assets/img/thumbs-up.svg" alt="pouce" />Like it</button>
-                <button class="btn"><img src="./assets/img/heart-shape-silhouette.svg" alt="heart" />Love it</button>
-                <button class="btn"><img src="./assets/img/shopping-cart-black-shape.svg" alt="caddi" />Buy it</button>
+                <div class="clic-container">
+                    <button class="btn"><img src="./assets/img/thumbs-up.svg" alt="pouce" />
+                        <p>Like it</p>
+                    </button>
+                    <button class="btn"><img src="./assets/img/heart-shape-silhouette.svg" alt="heart" />
+                        <p>Love it</p>
+                    </button>
+                    <button class="btn"><img src="./assets/img/shopping-cart-black-shape.svg" alt="caddi" />
+                        <p>Buy it</p>
+                    </button>
+                </div>
                 <!-- <a href=""></a>
                 <a href=""></a>
                 <a href=""></a> -->
@@ -116,28 +124,32 @@
                         <img src="./assets/img/avaone.jpg.png" />
                         <h4>rex talign</h4>
                         <button class="btn">
-                            <img src="./assets/img/envelope.svg" alt="" /> Lui écrire
+                            <img src="./assets/img/envelope.svg" alt="" />
+                            <p>Lui écrire</p>
                         </button>
                     </div>
                     <div class="team-contaier">
                         <img src="./assets/img/avatwo.jpg.png" />
                         <h4>marge inn</h4>
                         <button class="btn">
-                            <img src="./assets/img/envelope.svg" alt="" /> Lui écrire
+                            <img src="./assets/img/envelope.svg" alt="" />
+                            <p>Lui écrire</p>
                         </button>
                     </div>
                     <div class="team-contaier">
                         <img src="./assets/img/avathree.jpg.png" />
                         <h4>isaac newton</h4>
                         <button class="btn">
-                            <img src="./assets/img/envelope.svg" alt="" /> Lui écrire
+                            <img src="./assets/img/envelope.svg" alt="" />
+                            <p>Lui écrire</p>
                         </button>
                     </div>
                     <div class="team-contaier">
                         <img src="./assets/img/avafour.jpg.png" />
                         <h4>ash tehemel</h4>
                         <button class="btn">
-                            <img src="./assets/img/envelope.svg" alt="" /> Lui écrire
+                            <img src="./assets/img/envelope.svg" alt="" />
+                            <p>Lui écrire</p>
                         </button>
                     </div>
                 </div>
@@ -145,21 +157,33 @@
         </section>
     </main>
     <footer>
-        <form action="">
-            <h3>ENVOYEZ-NOUS UN MESSAGE</h3>
-            <div class="form-container">
-                <label for="Name">Votre nom</label>
-                <input type="text" name="Name" id="sect-container" />
-                <label for="E-mail">Votre e-mail</label>
-                <input type="email" name="email" id="sect-container" />
-                <label for="text">Votre message</label>
-                <textarea name="texte" id="sect-container" cols="30" rows="10"></textarea>
-                <!-- <input type="text" placeholder="Name" />
+        <h3>ENVOYEZ-NOUS UN MESSAGE</h3>
+        <form action="#">
+            <div class="form-grid">
+                <div>
+                    <label for="Name">Votre nom</label>
+                    <input type="text" id="Name" />
+                </div>
+                <div>
+                    <label for="E-mail">Votre e-mail</label>
+                    <input type="text" id="email" />
+                </div>
+                <div class="textarea">
+                    <label for="text">Votre message</label>
+                    <textarea id="message"></textarea>
+                </div>
+            </div>
+
+            <!-- <div class="submit-container">
+                <input type="submit" value="Envoyer">
+            </div> -->
+            <!-- <input type="text" placeholder="Name" />
              <input type="tel" placeholder="Phone" />
                 <input type="email" placeholder="Email" /> -->
-            </div>
-            <button>
-                <img src="./assets/img/paper-plane.svg" alt="paper" />Envoyer
+
+            <button class="bttn">
+                <img src="./assets/img/paper-plane.svg" alt="paper" />
+                <p>Envoyer</p>
             </button>
         </form>
     </footer>

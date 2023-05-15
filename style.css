@@ -18,6 +18,7 @@
   padding: 0;
   box-sizing: border-box;
   text-align: center;
+  outline: none;
 }
 
 li {
@@ -82,22 +83,48 @@ hr {
 }
 
 .btn {
+  display: flex;
   margin: 20px 15px;
   border: 1px;
   border-radius: 5px;
   padding: 5px 15px;
   font-family: OpenSansR;
   cursor: pointer;
-  font-size: 0.7rem;
+  font-size: 0.90rem;
+  height: 35px;
+  background: #dd5555;
+  color: #ffffff;
+  margin: 0 auto;
 }
 
+.clic-container {
+  width: 30%;
+  margin: 25px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.clic-container button {
+  background: #ffffff;
+  color: #2E2E2E;
+}
+
+.clic-container p {
+  font-size: 1rem;
+}
+
+
+
 .btn img {
+  border-radius: 2px;
+  height: 24px;
   padding: 0 8px 0 0;
-  height: 10px;
 }
 
 .btn:hover {
   background: #dd5555;
+  color: #ffffff;
   transition: 0.2s;
   transform: scale(1.1);
 }
@@ -147,6 +174,7 @@ h2 {
   font-family: OpenSanssm;
   font-size: 1.2rem;
   text-transform: capitalize;
+  margin-bottom: 70px;
 }
 
 .teampic-container {
@@ -170,7 +198,97 @@ h2 {
 }
 
 .team-contaier img {
-
   border-radius: 150px;
+}
 
+.team-contaier h4 {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+
+.btn img {
+  border-radius: 2px;
+  height: 24px;
+}
+
+footer {
+  background: #dd5555;
+  color: #ffffff;
+  height: 100vh;
+}
+
+footer h3 {
+  padding: 50px 0;
+  font-family: OpenSanssm;
+  font-size: 36px;
+}
+
+form {
+  max-width: 870px;
+  margin: 20px auto;
+  font-family: OpenSansR;
+}
+
+.form-grid {
+  width: 85%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "input1 input2"
+    "textarea textarea";
+  gap: 30px;
+}
+
+.textarea {
+  grid-area: textarea;
+}
+
+label {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  margin: 20px 0 40px;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: none;
+  height: 110px;
+}
+
+.bttn {
+  float: right;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid #dd5555;
+  border-radius: 5px;
+  margin: 0 35px;
+  cursor: pointer;
+}
+
+.bttn:hover {
+  transform: scale(0.9);
+  border: 1px solid green;
+  transition: 0.3s;
+
+}
+
+.bttn img {
+  padding: 0 10px 0 4px;
+}
+
+.bttn p {
+  font-family: OpenSansR;
+  font-weight: 300;
+  font-size: 1rem;
 }
