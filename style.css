@@ -30,6 +30,10 @@ li {
 body {
   max-width: 1400px;
   margin: 0 auto;
+
+  @media screen and (min-width:1400px) {
+    max-width: none;
+  }
 }
 
 nav {
@@ -41,7 +45,6 @@ nav {
   grid-template-columns: 18% 82%;
   align-items: center;
   padding: 15px;
-
 }
 
 ul {
@@ -155,6 +158,23 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+
+
+
+  @media screen and (max-width:840px) {
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+
+
+  @media screen and (max-width:450px) {
+    display: block;
+
+  }
+
+
+
 }
 
 .service-container {
@@ -193,6 +213,11 @@ h2 {
   font-size: 1.2rem;
   text-transform: capitalize;
   margin-bottom: 70px;
+
+  @media screen and (max-width:450px) {
+    font-size: 0.8rem;
+
+  }
 }
 
 .teampic-container {
@@ -214,6 +239,19 @@ h2 {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   align-items: center;
+
+
+
+
+  @media screen and (max-width:840px) {
+    grid-template-columns: 50% 50%;
+
+  }
+
+  @media screen and (max-width:450px) {
+    display: block;
+
+  }
 }
 
 .team-contaier img {
@@ -247,6 +285,15 @@ form {
   max-width: 870px;
   margin: 20px auto;
   font-family: OpenSansR;
+
+  @media screen and (max-width:550px) {
+    display: block;
+
+    h2 {
+      font-size: 0.8rem;
+    }
+
+  }
 }
 
 .form-grid {
