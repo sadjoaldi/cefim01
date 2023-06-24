@@ -19,8 +19,6 @@
   box-sizing: border-box;
   text-align: center;
   outline: none;
-  /* max-width: 1400px; */
-  /* margin: 0 auto; */
 }
 
 li {
@@ -30,10 +28,37 @@ li {
 body {
   max-width: 1400px;
   margin: 0 auto;
+  cursor: none;
 
-  @media screen and (min-width:1400px) {
+  @media screen and (min-width: 1400px) {
     max-width: none;
   }
+}
+
+.mouse {
+  z-index: 20;
+  position: absolute;
+  border-radius: 150px;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: exclusion;
+}
+
+#cursor {
+  background: #2128bd;
+  width: 14px;
+  height: 14px;
+}
+#mouseeff1 {
+  height: 100px;
+  width: 100px;
+  background: white;
+  transition: 0.2s ease;
+}
+#mouseeff2 {
+  height: 200px;
+  width: 200px;
+  background: rgb(41, 41, 41);
+  transition: 0.3s ease;
 }
 
 nav {
@@ -45,6 +70,9 @@ nav {
   grid-template-columns: 18% 82%;
   align-items: center;
   padding: 15px;
+  position: fixed;
+  width: 100%;
+  transition: 0.5s ease-out;
 }
 
 ul {
@@ -60,7 +88,6 @@ li:hover {
   transform: scale(1);
   background: #882e2e;
   height: 100%;
-
 }
 
 .head-container {
@@ -87,7 +114,7 @@ hr {
   height: 1px;
   width: 30%;
   margin: 0 auto;
-  background: #2E2E2E;
+  background: #2e2e2e;
 }
 
 .btn {
@@ -98,7 +125,7 @@ hr {
   padding: 5px 15px;
   font-family: OpenSansR;
   cursor: pointer;
-  font-size: 0.90rem;
+  font-size: 0.9rem;
   height: 35px;
   background: #dd5555;
   color: #ffffff;
@@ -115,14 +142,12 @@ hr {
 
 .clic-container button {
   background: #ffffff;
-  color: #2E2E2E;
+  color: #2e2e2e;
 }
 
 .clic-container p {
   font-size: 1rem;
 }
-
-
 
 .btn img {
   border-radius: 2px;
@@ -138,7 +163,6 @@ hr {
 }
 
 h2 {
-
   font-family: OpenSanssm;
   text-transform: uppercase;
 }
@@ -146,7 +170,7 @@ h2 {
 .section-1-service {
   max-width: 1100px;
   margin: 0 auto;
-  color: #2E2E2E;
+  color: #2e2e2e;
 }
 
 .section-1-service h2 {
@@ -159,22 +183,13 @@ h2 {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 
-
-
-  @media screen and (max-width:840px) {
+  @media screen and (max-width: 840px) {
     grid-template-columns: 1fr 1fr;
-
   }
 
-
-
-  @media screen and (max-width:450px) {
+  @media screen and (max-width: 450px) {
     display: block;
-
   }
-
-
-
 }
 
 .service-container {
@@ -193,7 +208,6 @@ h2 {
   align-items: center;
 }
 
-
 .service-container h3 {
   font-family: OpenSanssm;
   padding: 5px 0 15px;
@@ -204,7 +218,7 @@ h2 {
   text-align: center;
   font-size: 0.92rem;
   font-family: OpenSansR;
-  color: #2E2E2E;
+  color: #2e2e2e;
   font-weight: 300;
 }
 
@@ -214,9 +228,8 @@ h2 {
   text-transform: capitalize;
   margin-bottom: 70px;
 
-  @media screen and (max-width:450px) {
+  @media screen and (max-width: 450px) {
     font-size: 0.8rem;
-
   }
 }
 
@@ -240,17 +253,12 @@ h2 {
   grid-template-columns: 25% 25% 25% 25%;
   align-items: center;
 
-
-
-
-  @media screen and (max-width:840px) {
+  @media screen and (max-width: 840px) {
     grid-template-columns: 50% 50%;
-
   }
 
-  @media screen and (max-width:450px) {
+  @media screen and (max-width: 450px) {
     display: block;
-
   }
 }
 
@@ -262,7 +270,6 @@ h2 {
   font-size: 2rem;
   margin: 20px 0;
 }
-
 
 .btn img {
   border-radius: 2px;
@@ -286,13 +293,12 @@ form {
   margin: 20px auto;
   font-family: OpenSansR;
 
-  @media screen and (max-width:550px) {
+  @media screen and (max-width: 550px) {
     display: block;
 
     h2 {
       font-size: 0.8rem;
     }
-
   }
 }
 
@@ -349,7 +355,6 @@ textarea {
   transform: scale(0.9);
   border: 1px solid green;
   transition: 0.3s;
-
 }
 
 .bttn img {
